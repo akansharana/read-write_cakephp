@@ -1,0 +1,13 @@
+======= In Controller ======
+$filename = "../Config/core.php"; 
+
+$file = fopen( $filename, 'r' ); 
+
+$size = filesize( $filename ); 
+$filedata = fread( $file, $size ); 
+if($filedata){
+    echo $current = file_get_contents($filedata);
+}
+ 
+
+
